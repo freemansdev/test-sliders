@@ -16,7 +16,9 @@ module.exports = {
           'vue-style-loader',
           'css-loader'
         ],
-      },      {
+      },
+      { test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' },
+      {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
