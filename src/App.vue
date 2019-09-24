@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-link to="/"><h1>{{ msg }}</h1></router-link>
+    <h1><router-link to="/">{{ msg }}</router-link></h1>
     <ul>
       <li><router-link to="/siema">Siema</router-link></li>
       <li><router-link to="/glide">Glide</router-link></li>
@@ -22,6 +22,9 @@ export default {
 </script>
 
 <style>
+body {
+  background: #000000e8;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -47,5 +50,13 @@ li {
 
 a {
   color: #42b983;
+  text-decoration: none;
+}
+.router-link-active {
+  font-weight: 800;
+  text-decoration: underline;
+}
+.container h1,h2 {
+  color: beige;
 }
 </style>

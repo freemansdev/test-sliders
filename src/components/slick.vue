@@ -1,15 +1,17 @@
 <template>
-<div>
+<div class="container">
   <h1>Slick</h1>
-  <div class="slider">
-    <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--pink.svg" alt="Siema image" /></div>
-    <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
-    <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--pink.svg" alt="Siema image" /></div>
-    <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
-    <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--pink.svg" alt="Siema image" /></div>
-    <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
-    <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--pink.svg" alt="Siema image" /></div>
-    <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
+  <div class="wrap">
+    <div class="slider">
+      <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--pink.svg" alt="Siema image" /></div>
+      <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
+      <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--pink.svg" alt="Siema image" /></div>
+      <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
+      <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--pink.svg" alt="Siema image" /></div>
+      <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
+      <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--pink.svg" alt="Siema image" /></div>
+      <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
+    </div>
   </div>
 </div>
 </template>
@@ -26,10 +28,17 @@ export default {
   },
   mounted() {
     $('.slider').slick({
-      lazyLoad: 'ondemand',
-      slidesToShow: 3,
-      slidesToScroll: 1
     });
   }  
 }
 </script>
+
+<style>
+.wrap {
+  display: flex;
+  justify-content: center;
+}
+.slider{
+  width: 50%;
+}
+</style>

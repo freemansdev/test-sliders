@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="container">
   <h1>Glide</h1>
     <div class="glide">
       <div data-glide-el="track" class="glide__track">

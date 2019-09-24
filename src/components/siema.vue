@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="container">
     <h1>Siema</h1>
     <div id="slider1" ref="slider1">
         <div><img src="https://pawelgrzybek.com/siema/assets/siema--pink.svg" alt="Siema image" /></div>
