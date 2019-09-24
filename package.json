@@ -14,6 +14,7 @@
     "jquery": "^3.4.1",
     "siema": "^1.5.1",
     "slick-carousel": "^1.8.1",
+    "swiper": "^5.0.3",
     "vue": "^2.5.11",
     "vue-router": "^3.1.3"
   },
