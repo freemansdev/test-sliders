@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <h1>Siema</h1>
+    <h1><a href="https://pawelgrzybek.github.io/siema/">Siema</a></h1>
     <div id="slider1" ref="slider1">
         <div><img src="https://pawelgrzybek.com/siema/assets/siema--pink.svg" alt="Siema image" /></div>
         <div><img src="https://pawelgrzybek.com/siema/assets/siema--yellow.svg" alt="Siema image" /></div>

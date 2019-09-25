@@ -1,16 +1,16 @@
 <template>
 <div class="container">
-  <h1>Slick</h1>
+  <h1><a href="http://kenwheeler.github.io/slick/">Slick</a></h1>
   <div class="wrap">
     <div class="slider">
-      <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--pink.svg" alt="Siema image" /></div>
-      <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
-      <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--pink.svg" alt="Siema image" /></div>
-      <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
-      <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--pink.svg" alt="Siema image" /></div>
-      <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
-      <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--pink.svg" alt="Siema image" /></div>
-      <div><img data-lazy="https://pawelgrzybek.com/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
+      <div><img data-lazy="https://picsum.photos/id/0/800/600" /></div>
+      <div><img data-lazy="https://picsum.photos/id/1/800/600" /></div>
+      <div><img data-lazy="https://picsum.photos/id/2/800/600" /></div>
+      <div><img data-lazy="https://picsum.photos/id/3/800/600" /></div>
+      <div><img data-lazy="https://picsum.photos/id/4/800/600" /></div>
+      <div><img data-lazy="https://picsum.photos/id/5/800/600" /></div>
+      <div><img data-lazy="https://picsum.photos/id/6/800/600" /></div>
+      <div><img data-lazy="https://picsum.photos/id/7/800/600" /></div>
     </div>
   </div>
 </div>
@@ -45,6 +45,6 @@ export default {
   justify-content: center;
 }
 .slider{
-  width: 50%;
+  width: 70%;
 }
 </style>
