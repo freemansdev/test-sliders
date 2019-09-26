@@ -1,6 +1,11 @@
 <template>
 <div class="container">
   <h1><a href="https://glidejs.com/">Glide</a></h1>
+  <div class="flex-container">
+  <ul class="features">
+    <li v-for="item in items" class="icon" :class="item.feature">{{item.text}}</li>
+  </ul>
+  </div>
     <div class="glide gallery-top">
       <div data-glide-el="track" class="glide__track">
         <ul class="glide__slides">
@@ -30,10 +35,16 @@
 import Glide from '@glidejs/glide'
 import '@glidejs/glide/dist/css/glide.core.min.css'
 import '@glidejs/glide/dist/css/glide.theme.min.css'
+import {FeatureList} from '../Features'
+
+let Features = new FeatureList()
+Features.get(2).feature = 'uncheck'
 
 export default {
   data () {
-    return {}
+    return {
+      items : Features.items
+    }
   },
   mounted() {
     new Glide('.glide', {
@@ -54,6 +65,8 @@ export default {
 </script>
 
 <style>
+@import url(../main.css);
+
 .glide {
   width: 100%;
   margin-left: auto;

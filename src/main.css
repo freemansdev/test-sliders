@@ -1,0 +1,43 @@
+.flex-container ul {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-direction: column;
+}
+
+.flex-container ul li {
+  width: 400px;
+  margin: 10px;
+  line-height: 1.2rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: left;
+  color: #ffffffa1;
+}
+
+.icon:before {
+  display:inline-block;
+  margin-right: 0.3em;
+  text-align: center;
+  font-size: 1.5rem;  
+}
+
+.check:before {
+  content:'\1F609';
+  color: #5abb00f2;
+}
+
+.uncheck:before {
+  content:'\1F615';
+  color: #c84d00a8;
+}
+
+.sleep:before {
+  content:'\1F634';
+  color: #a6a600;
+}

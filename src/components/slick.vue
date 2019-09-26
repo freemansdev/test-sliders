@@ -1,6 +1,11 @@
 <template>
 <div class="container">
   <h1><a href="http://kenwheeler.github.io/slick/">Slick</a></h1>
+  <div class="flex-container">
+  <ul class="features">
+    <li v-for="item in items" class="icon" :class="item.feature">{{item.text}}</li>
+  </ul>
+  </div>
   <div class="wrap">
     <div class="slider">
       <div><img data-lazy="https://picsum.photos/id/0/800/600" /></div>
@@ -21,10 +26,17 @@ import $ from 'jquery'
 import 'slick-carousel'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import {FeatureList} from '../Features'
+
+let Features = new FeatureList()
+Features.get(4).feature = 'uncheck'
+
 
 export default {
   data () {
-    return {}
+    return {
+      items : Features.items
+    }
   },
   mounted() {
     $('.slider').slick({
@@ -40,11 +52,13 @@ export default {
 </script>
 
 <style>
+@import url(../main.css);
+
 .wrap {
   display: flex;
   justify-content: center;
 }
 .slider{
-  width: 70%;
+  width: 50%;
 }
 </style>

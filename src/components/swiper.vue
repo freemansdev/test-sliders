@@ -1,6 +1,11 @@
 <template>
 <div class="container">
   <h1><a href="https://swiperjs.com/">Swiper</a></h1>
+  <div class="flex-container">
+  <ul class="features">
+    <li v-for="item in items" class="icon" :class="item.feature">{{item.text}}</li>
+  </ul>
+  </div>
   <!-- Slider main container -->
   <div class="swiper-container gallery-top">
       <!-- Additional required wrapper -->
@@ -103,10 +108,16 @@
 <script>
 import Swiper from 'swiper'
 import 'swiper/css/swiper.min.css'
+import {FeatureList} from '../Features'
+
+let Features = new FeatureList()
+Features.get(3).feature = 'uncheck'
 
 export default {
   data () {
-    return {}
+    return {
+      items : Features.items
+    }
   },
   mounted() {
     //initialize swiper when document ready
@@ -148,6 +159,8 @@ export default {
 </script>
 
 <style>
+@import url(../main.css);
+
     .swiper-container {
       width: 100%;
       margin-left: auto;
