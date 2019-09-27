@@ -4,6 +4,8 @@
   <div class="flex-container">
   <ul class="features">
     <li v-for="item in items" class="icon" :class="item.feature">{{item.text}}</li>
+    <li class="icon sleep">Build: <span class="white">Compleat</span>, Modular</li>
+    <li class="icon sleep">lightweight (<b class="white">>20kb</b> gzipped)</li>
   </ul>
   </div>
   <!-- Slider main container -->
@@ -17,8 +19,7 @@
             <div class="swiper-lazy-preloader"></div>
           </div>
           <div class="swiper-slide">
-            <img data-src="https://picsum.photos/id/2/800/600" class="swiper-lazy">
-            <div class="swiper-lazy-preloader"></div>
+            <dfp-slot data-title="Ad" path="/21737763597/adunit-1" :size="[320, 100]" id="div-gpt-ad-1559997122392-0"/>
           </div>
           <div class="swiper-slide">
             <img data-src="https://picsum.photos/id/3/800/600" class="swiper-lazy">
@@ -109,11 +110,15 @@
 import Swiper from 'swiper'
 import 'swiper/css/swiper.min.css'
 import {FeatureList} from '../Features'
+import DfpSlot from './DfpSlot.vue'
 
 let Features = new FeatureList()
-Features.get(3).feature = 'uncheck'
 
 export default {
+  name: 'Swiper',
+  components: {
+    DfpSlot
+  },
   data () {
     return {
       items : Features.items

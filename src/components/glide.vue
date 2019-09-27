@@ -4,15 +4,22 @@
   <div class="flex-container">
   <ul class="features">
     <li v-for="item in items" class="icon" :class="item.feature">{{item.text}}</li>
+    <li class="icon check">Build: <b class="white">Compleat</b>, <b class="white">Modular</b></li>
+    <li class="icon check">lightweight (<b class="white">~7kb</b> gzipped)</li>
   </ul>
   </div>
     <div class="glide gallery-top">
       <div data-glide-el="track" class="glide__track">
         <ul class="glide__slides">
           <li class="glide__slide"><img src="https://picsum.photos/id/0/800/600" /></li>
+          <dfp-slot data-title="Ad" path="/21737763597/adunit-1" :size="[320, 100]" id="div-gpt-ad-1559997122392-0"/>
           <li class="glide__slide"><img src="https://picsum.photos/id/1/800/600" /></li>
           <li class="glide__slide"><img src="https://picsum.photos/id/2/800/600" /></li>
-          <li class="glide__slide"><img src="https://picsum.photos/id/3/800/600" /></li>
+          <li class="glide__slide">
+            <iframe class="youtube-player" type="text/html" width="800" height="600"
+              src="http://www.youtube.com/embed/bZSM5ZbdpWw" frameborder="0">
+            </iframe>
+          </li>
           <li class="glide__slide"><img src="https://picsum.photos/id/4/800/600" /></li>
         </ul>
       </div>
@@ -33,14 +40,19 @@
 
 <script>
 import Glide from '@glidejs/glide'
+import DfpSlot from './DfpSlot.vue'
 import '@glidejs/glide/dist/css/glide.core.min.css'
 import '@glidejs/glide/dist/css/glide.theme.min.css'
 import {FeatureList} from '../Features'
 
 let Features = new FeatureList()
-Features.get(2).feature = 'uncheck'
+
 
 export default {
+  name: 'Glide',
+  components: {
+    DfpSlot
+  },
   data () {
     return {
       items : Features.items
