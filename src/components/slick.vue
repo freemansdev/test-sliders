@@ -5,7 +5,7 @@
   <ul class="features">
     <li v-for="item in items" class="icon" :class="item.feature">{{item.text}}</li>
     <li class="icon sleep">Build: <span class="white">Compleat</span>, Modular</li>
-    <li class="icon sleep">lightweight (<b class="white">>10kb</b> gzipped)</li>
+    <li class="icon sleep">lightweight (<b class="white">~11kb</b> gzipped)</li>
   </ul>
   </div>
   <div class="wrap">

@@ -4,7 +4,8 @@ import Siema from './components/siema.vue'
 import Glide from './components/glide.vue'
 import Slick from './components/slick.vue'
 import Swiper from './components/swiper.vue'
-
+import Lory from './components/lory.vue'
+import Tiny from './components/tiny.vue'
 
 Vue.use(Router)
 
@@ -34,6 +35,16 @@ export const router = new Router({
             path: '/slick',
             name: 'Slick',
             component: Slick
+        },
+        {
+            path: '/lory',
+            name: 'Lory',
+            component: Lory
+        },
+        {
+            path: '/tiny',
+            name: 'tiny',
+            component: Tiny
         },
     ]
 })

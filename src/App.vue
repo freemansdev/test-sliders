@@ -6,6 +6,8 @@
       <li><router-link to="/glide">Glide</router-link></li>
       <li><router-link to="/swiper">Swiper</router-link></li>
       <li><router-link to="/slick">Slick</router-link></li>
+      <li><router-link to="/lory">Lory</router-link></li>
+      <li><router-link to="/tiny">Tiny</router-link></li>
     </ul>
     <router-view></router-view>
   </div>
